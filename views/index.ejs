@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="ECrime.XYZ">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#7289DA">
+
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="E-Crime Portal">
+    <meta name="apple-mobile-web-app-title" content="E-Crime Portal">
+    <meta name="theme-color" content="#7289DA">
+    <meta name="msapplication-navbutton-color" content="#7289DA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>Join the E-Crime Portal Discord Server</title>
+    <!-- Search Engine -->
+    <meta name="keywords" content="discord, discord ecrime, cybercrime discord, cyber crime discord, e crime portal discord, ecrime portal, ecrime discord, ecrime portal discord, discord e crime portal, discord e crime portal">
+    <meta name="description" content="Join the E-Crime Portal Discord to chat with <%= count %> other cyber security enthusiasts! The E-Crime Portal is a not for profit initiative of the Clear Net Security Foundation that aims to educate the globe about Cyber Security.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="E-Crime Portal">
+    <meta itemprop="description" content="Join the E-Crime Portal Discord to chat with <%= count %> other cyber security enthusiasts! The E-Crime Portal is a not for profit initiative of the Clear Net Security Foundation that aims to educate the globe about Cyber Security.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="E-Crime Portal Discord">
+    <meta name="twitter:description" content="Join the E-Crime Portal Discord to chat with <%= count %> other cyber security enthusiasts! The E-Crime Portal is a not for profit initiative of the Clear Net Security Foundation that aims to educate the globe about Cyber Security.">
+    <meta name="twitter:site" content="@eCrimePortal">
+    <meta name="twitter:creator" content="@eCrimePortal">
+    <meta name="twitter:image" content="https://discord.com/assets/28174a34e77bb5e5310ced9f95cb480b.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="E-Crime Portal Discord">
+    <meta property="og:description" content="Join the E-Crime Portal Discord to chat with <%= count %> other cyber security enthusiasts! The E-Crime Portal is a not for profit initiative of the Clear Net Security Foundation that aims to educate the globe about Cyber Security.">
+    <meta property="og:url" content="<%= url %>">
+    <meta property="og:site_name" content="Discord Server Invite">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <!--  Stylesheets  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="section full-height">
+		<div class="absolute-center">
+			<div class="section">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+                            <div class="spacer-s"></div>
+                            <img src="/apple-touch-icon.png" />
+                            <br>
+                            <br>
+    <h1>
+        Join the E-Crime Portal Discord Server
+    </h1><div class="spacer-s"></div>
+    <p class="subhead">In order to eliminate the possibility of any potentials raids on E-Crime Portal's Discord server, you must pass this capcha to recieve a one use invite.</p>
+    <div class="spacer-s"></div>
+    <div class="text-xs-center">
+    <form action="<%=path%>" method="POST">
+           <%- captcha%>
+           <br>
+           <br>
+           <button type='submit'>Verify Me</button>
+           <br>
+        </form>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script>
+            function cb(token) {
+                console.log('token', token);
+                var input = document.createElement('input');
+                input.setAttribute('type', 'text');
+                input.setAttribute('name', 'g-recaptcha-response');
+                input.setAttribute('value', token);
+                document.getElementsByTagName('form')[0].appendChild(input);
+            }
+        </script>
+    </body>
+</html>
