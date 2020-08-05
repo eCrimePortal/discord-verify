@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+/* #Primary
+================================================== */
+
+body{
+    font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #212112;
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+	background-position: center;
+	background-repeat: repeat;
+	background-size: 7%;
+	background-color: #fff;
+	overflow-x: hidden;
+    transition: all 200ms linear;
+    text-align: center;
+}
+::selection {
+	color: #fff;
+	background-color: #000000;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: #000000;
+}
+button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #7289DA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: #7289DA;
+    color:white;
+}
+h1{
+	font-size: 48px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: #212112;
+	text-align: center;
+}
+.subhead {
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+iframe {
+    text-align: center;
+}
+.spacer-s {
+    padding-top: 30px;
+}
+.text-xs-center {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}
+img {
+    height: 80px;
+    width: 80px;
+}
